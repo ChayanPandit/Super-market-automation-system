@@ -89,13 +89,13 @@ app.use((req, res, next) => {
 });
 
 app.get("/", (req, res) => {
-  res.render("welcome");
+  res.redirect("welcome");
 });
 
 // authentications
 
 app.get("/login", (req, res) => {
-  res.redirect("login");
+  res.render("login");
 });
 
 app.post(
