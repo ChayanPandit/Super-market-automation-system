@@ -79,7 +79,7 @@ app.get("/", (req, res) => {
 // authentications
 
 app.get("/login", (req, res) => {
-  res.render("login");
+  res.redirect("login");
 });
 
 app.post(
